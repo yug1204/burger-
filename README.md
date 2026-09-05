@@ -1,5 +1,7 @@
 # Smash & Char — Gourmet Burgers 🍔
 
+> 🚀 **Live Demo:** [https://yug1204.github.io/burger-/](https://yug1204.github.io/burger-/)
+
 A single-page restaurant website for a gourmet burger brand featuring a scroll-driven cinematic hero section.
 
 ## Features
