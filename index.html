@@ -13,18 +13,23 @@
 <body>
     <nav class="navbar">
         <div class="logo">SMASH & CHAR</div>
-        <div class="nav-links">
-            <a href="#menu">Menu</a>
-            <a href="#about">Our Story</a>
-            <a href="#location">Visit Us</a>
-            <a href="#order" class="btn-primary btn-nav">Order Now</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="#menu" class="nav-item">Menu</a>
+            <a href="#about" class="nav-item">Our Story</a>
+            <a href="#location" class="nav-item">Visit Us</a>
+            <a href="#location" class="btn-primary btn-nav nav-item">Order Now</a>
         </div>
     </nav>
 
     <main>
         <section class="hero-container" id="hero">
             <div class="video-wrapper">
-                <video id="hero-video" poster="poster.jpg" muted playsinline preload="auto">
+                <video id="hero-video" poster="poster.jpg" muted playsinline webkit-playsinline x5-playsinline preload="auto" disablePictureInPicture>
                     <source src="burger_scrub.mp4" type="video/mp4">
                     <source src="burger_scrub.webm" type="video/webm">
                     <source src="Gourmet_burger_assembled_layer_by_202609060003.mp4" type="video/mp4">
