@@ -202,20 +202,33 @@ h1, h2, h3, h4 {
     transform: translateY(-50%);
     color: #fff;
     opacity: 0; /* Hidden by default, GSAP will handle */
-    max-width: 600px;
+    max-width: 580px;
+    background: rgba(12, 6, 4, 0.92);
+    border: 1.5px solid rgba(255, 179, 0, 0.4);
+    border-radius: 20px;
+    padding: 2.2rem 2.5rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    z-index: 10;
 }
 
 .scrub-text h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    font-weight: 900;
     color: var(--accent-yellow);
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    margin-bottom: 0.8rem;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.9);
+    letter-spacing: -0.5px;
 }
 
 .scrub-text p {
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+    line-height: 1.4;
 }
 
 .hero-title {
@@ -536,29 +549,39 @@ h1, h2, h3, h4 {
         max-width: 92%;
         width: 100%;
         text-align: center;
-        background: rgba(29, 16, 11, 0.85);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 179, 0, 0.25);
+        background: rgba(10, 5, 3, 0.96);
+        border: 1.5px solid rgba(255, 179, 0, 0.45);
         border-radius: 16px;
-        padding: 0.9rem 1rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        padding: 1rem 1.2rem;
+        box-shadow: 0 14px 40px rgba(0, 0, 0, 0.9);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
     }
 
     .scrub-text h2 {
-        font-size: 1.65rem;
-        margin-bottom: 0.25rem;
+        font-size: 1.7rem;
+        font-weight: 900;
+        color: #FFB300;
+        margin-bottom: 0.35rem;
         line-height: 1.15;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95);
     }
 
     .scrub-text p {
-        font-size: 0.95rem;
+        font-size: 0.98rem;
+        font-weight: 600;
+        color: #FFFFFF;
         line-height: 1.4;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95);
     }
 
     .hero-title {
-        font-size: 2.1rem;
+        font-size: 2.2rem;
+        font-weight: 900;
+        color: #FFFFFF;
         line-height: 1.15;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95);
     }
 
     .scroll-indicator {
