@@ -83,6 +83,17 @@ document.addEventListener("DOMContentLoaded", () => {
         // Smooth video seek controller
         let targetTime = 0;
 
+        // Ambient Canvas real-time sync for edge-to-edge glow
+        const canvas = document.getElementById("ambient-canvas");
+        const ctx = canvas ? canvas.getContext("2d", { willReadFrequently: false }) : null;
+
+        function updateAmbient() {
+            if (!ctx || !video || video.readyState < 2) return;
+            try {
+                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            } catch (e) {}
+        }
+
         function applySeek() {
             if (!video || video.readyState < 2) return;
             if (video.seeking) return; // Prevent seek queuing jank
@@ -99,8 +110,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
-        video.addEventListener("seeked", applySeek);
+        video.addEventListener("seeked", () => {
+            applySeek();
+            updateAmbient();
+        });
         gsap.ticker.add(applySeek);
+
+        // Initial ambient render
+        updateAmbient();
+        setTimeout(updateAmbient, 300);
 
         // GSAP Timeline tied to ScrollTrigger
         const tl = gsap.timeline({
