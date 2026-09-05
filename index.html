@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smash & Char | Gourmet Burgers</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SMASH & CHAR</div>
+        <div class="nav-links">
+            <a href="#menu">Menu</a>
+            <a href="#about">Our Story</a>
+            <a href="#location">Visit Us</a>
+            <a href="#order" class="btn-primary btn-nav">Order Now</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-container" id="hero">
+            <div class="video-wrapper">
+                <video id="hero-video" poster="poster.jpg" muted playsinline preload="auto">
+                    <source src="burger_scrub.mp4" type="video/mp4">
+                    <source src="burger_scrub.webm" type="video/webm">
+                    <source src="Gourmet_burger_assembled_layer_by_202609060003.mp4" type="video/mp4">
+                </video>
+                <div class="overlay-gradient"></div>
+            </div>
+            
+            <div class="text-overlays">
+                <div class="scrub-text step-1">
+                    <h2>Fresh Artisan Buns</h2>
+                    <p>Baked daily, toasted to perfection.</p>
+                </div>
+                <div class="scrub-text step-2">
+                    <h2>100% Wagyu Beef</h2>
+                    <p>Smashed thin for maximum crust.</p>
+                </div>
+                <div class="scrub-text step-3">
+                    <h2>Aged Cheddar</h2>
+                    <p>Melted directly on the patty.</p>
+                </div>
+                <div class="scrub-text step-4">
+                    <h2>Crisp Veggies</h2>
+                    <p>Farm-fresh lettuce and ripe tomatoes.</p>
+                </div>
+                <div class="scrub-text step-5">
+                    <h2>Signature House Sauce</h2>
+                    <p>The perfect tangy finish.</p>
+                </div>
+                <div class="scrub-text step-6">
+                    <h1 class="hero-title">The Ultimate Burger.</h1>
+                    <p class="hero-subtitle">Scroll down to explore</p>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to Assemble</span>
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <section id="menu" class="standard-section">
+            <div class="container">
+                <h2 class="section-title">Our Signatures</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>The Classic Char</h3>
+                            <p>Double patty, American cheese, lettuce, tomato, house sauce.</p>
+                            <span class="price">$12</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Truffle Mushroom</h3>
+                            <p>Swiss cheese, roasted wild mushrooms, truffle mayo.</p>
+                            <span class="price">$14</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h3>Spicy Diablo</h3>
+                            <p>Pepper jack, jalapeños, crispy onions, chipotle aioli.</p>
+                            <span class="price">$13</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="standard-section bg-dark">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2 class="section-title light">The Art of the Smash</h2>
+                        <p>We believe in doing one thing and doing it perfectly. No gimmicks, just high-quality ingredients treated with respect. Our custom blend of beef is smashed violently onto a screaming hot griddle to create the ultimate maillard reaction—a crust you can't get any other way.</p>
+                        <a href="#menu" class="btn-primary">See the Menu</a>
+                    </div>
+                    <div class="about-image-placeholder">
+                        <div class="pattern-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="standard-section">
+            <div class="container text-center">
+                <h2 class="section-title">Come Get It</h2>
+                <p class="location-details">123 Burger Lane, Food District<br>Open Daily: 11AM - 10PM</p>
+                <div class="cta-wrapper">
+                    <a href="#" class="btn-primary large">Order for Pickup</a>
+                    <a href="#" class="btn-secondary large">Find on Delivery Apps</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">SMASH & CHAR</div>
+                <div class="footer-social">
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Smash & Char. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
